@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ProjetoHt</title>
+  <meta name="description" content="ProjetoHt - site estático de exemplo com deploy via GitHub Pages">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Principal">
+      <a class="brand" href="#">ProjetoHt</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+        <span class="sr-only">Abrir menu</span>
+        ☰
+      </button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Bem-vindo ao ProjetoHt</h1>
+        <p>Um ponto de partida leve para um site estático com deploy automático via GitHub Pages.</p>
+        <a class="button" href="#sobre">Começar</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container grid">
+        <div>
+          <h2>Sobre</h2>
+          <p>Este repositório contém um site estático simples pronto para publicar com CI/CD configurado.</p>
+          <ul>
+            <li>Código limpo e acessível</li>
+            <li>Layout responsivo</li>
+            <li>CI/CD com GitHub Actions</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stack</h3>
+          <p>HTML + CSS + JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section alt">
+      <div class="container">
+        <h2>Recursos</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Rápido</h3>
+            <p>Sem dependências pesadas.</p>
+          </div>
+          <div class="feature">
+            <h3>Simples</h3>
+            <p>Estrutura clara para evoluir.</p>
+          </div>
+          <div class="feature">
+            <h3>Automático</h3>
+            <p>Deploy contínuo em cada push na branch <code>main</code>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Adapte esta seção com seus dados de contato.</p>
+        <a class="button outline" href="mailto:contato@example.com">Enviar e‑mail</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container small">
+      <p>© <span id="year"></span> ProjetoHt. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
